@@ -301,7 +301,6 @@
   }
 
   .issues {
-    margin-top: 40px;
     display: block;
   }
 
@@ -337,7 +336,7 @@
   }
 
   .main {
-    margin: 0px 11px;
+    margin: 39px 11px 0px 11px;
   }
 
   .heading-reasons {
