@@ -238,8 +238,6 @@
 
 
 @media (max-width:768px) {
-  .header {}
-
   .content-section {
     margin: 0px;
   }
@@ -259,10 +257,6 @@
   }
 
   .gallery {
-    margin-top: 60px;
-  }
-
-  .footer {
     margin-top: 60px;
   }
 
@@ -294,7 +288,7 @@
 
 
   .footer {
-    padding: 20px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
   }
@@ -317,13 +311,10 @@
   .tips {
     margin-top: 0px;
     grid-template-columns: 32% 65%;
+    display: block;
   }
 
   .gallery {
-    margin-top: 0px;
-  }
-
-  .footer {
     margin-top: 0px;
   }
 
@@ -384,11 +375,9 @@
     display: block;
   }
 
-  .tips {
-    display: block;
-  }
 
   .footer {
+    margin-top: 0px;
     padding: 10px;
     display: flex;
     justify-content: center;
