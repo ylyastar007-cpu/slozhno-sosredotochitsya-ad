@@ -4,8 +4,10 @@
   font-size: var(--font-size);
   font-weight: 400;
   line-height: 23.4px;
-  background-color: var(--sub-body-color);
-   background-attachment: fixed;
+  background-attachment: fixed;
+  background-image: var(--backgroung-image);
+  background-position: center;
+  background-size: cover;
 }
 
 .header {
@@ -14,9 +16,6 @@
   display: grid;
   position: relative;
   grid-template-rows: 1fr min-content 1fr;
-  background-image: var(--backgroung-image);
-  background-position: center;
-  background-size: cover;
 }
 
 .header__theme-menu-list {
@@ -122,7 +121,7 @@
 }
 
 .content__section-heading {
-  color: var(--btn-color);
+  color: var(--sub-title-color);
   font-size: var(--font-size);
 }
 
