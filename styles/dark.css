@@ -10,6 +10,3 @@
   --backgroung-image: url(../images/cover-image-dark.png) !important;
 }
 
-.theme-dark .root {
-  display: flex;
-}
