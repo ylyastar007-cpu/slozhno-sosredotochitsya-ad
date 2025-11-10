@@ -301,7 +301,8 @@
   }
 
   .issues {
-    margin-top: 0px;
+    margin-top: 40px;
+    display: block;
   }
 
   .reasons {
@@ -370,10 +371,6 @@
     margin-top: 20px;
   }
 
-  .issues {
-    margin-top: 40px;
-    display: block;
-  }
 
 
   .footer {
