@@ -1,13 +1,13 @@
 .page {
   margin: 0 auto;
-  font-family: var(--font, monospace);
+  font-family: var(--font);
   font-size: var(--font-size);
   font-weight: 400;
   line-height: 23.4px;
   background-attachment: fixed;
   background-image: var(--backgroung-image);
   background-position: center;
-  background-size: cover;
+  background-size: cover; /* картинка на все страницу */
 }
 
 .header {
@@ -59,8 +59,7 @@
   block-size: 13px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  fill: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  filter: drop-shadow(0px 0px 4px var(--accent-color)); /* свечение цетнр радиус четыре */
 }
 
 
@@ -92,7 +91,7 @@
 .header__title {
   margin-left: -20px;
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /* был указан */
   color: var(--title-color);
   font-weight: 700;
 }
@@ -236,7 +235,6 @@
 
 }
 
-
 @media (max-width:768px) {
   .content-section {
     margin: 0px;
@@ -270,7 +268,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 13px;
-  }
+  } 
 
   .header__text {
     margin-top: 37px;
