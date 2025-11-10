@@ -238,6 +238,7 @@
 
 
 @media (max-width:768px) {
+
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
@@ -251,6 +252,7 @@
   }
 
   .header__text {
+    margin-top: 0px;
     max-inline-size: 364px;
     max-block-size: 117px;
   }
@@ -279,7 +281,13 @@
 
   .header__title {
     margin-left: 0px;
+    line-height: 83%;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .rec {
+    padding-right: 7px;
+    margin: 10px;
   }
 
   .header__text {
@@ -287,22 +295,39 @@
     max-block-size: 117px;
   }
 
+  .main {
+    margin: 0px 11px;
+  }
+
+  .heading-reasons {
+    max-width: 100%;
+  }
+
   .gallery__img {
-    padding: 0 0 40px 0;
+    margin-top: 10px;
   }
 
   .gallery-heading {
-    margin: 0 10px 10px 10px;
+    margin: 0;
   }
 
   .gallery__items {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 0 10px;
+    gap: 0px;
+  }
+
+  .content-section {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .content__section-artiles,
+  .content__section-subtitle {
+    margin-top: 20px;
   }
 
   .issues {
+    margin-top: 40px;
     display: block;
   }
 
@@ -325,11 +350,11 @@
   }
 
   .frame::before {
-    margin: 10px;
+    margin: 10px 10px;
   }
 
   .frame::after {
     block-size: 25px;
-    margin: 10px;
+    margin: 10px 10px;
   }
 }
