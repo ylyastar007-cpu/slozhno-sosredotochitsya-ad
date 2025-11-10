@@ -4,7 +4,10 @@
   font-size: var(--font-size);
   font-weight: 400;
   line-height: 23.4px;
-  background-color: var(--sub-body-color);
+  background-image: var(--backgroung-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -13,10 +16,6 @@
   display: grid;
   position: relative;
   grid-template-rows: 1fr min-content 1fr;
-  background-image: var(--backgroung-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .header__theme-menu-list {
@@ -303,9 +302,11 @@
   .heading-reasons {
     max-width: 100%;
   }
-  .header__theme-menu-button{
+
+  .header__theme-menu-button {
     padding: 0px 14px;
   }
+
   .gallery__img {
     margin-top: 10px;
   }
