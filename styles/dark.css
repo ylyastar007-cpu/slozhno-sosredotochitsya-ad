@@ -1,6 +1,6 @@
 
 
-.theme_dark {
+:root.theme-dark {
   --title-color: #DB00FF !important;
   --text-color: #F1B2CE !important;
   --sub-text-color: #000028 !important;
@@ -9,10 +9,6 @@
   --backgroung-image: url(../images/cover-image-dark.png) !important;
 }
 
-.theme_dark .decorative__element {
+.theme-dark .root {
   display: flex;
 }
-
-.theme_dark .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.40);
-} 

@@ -1,28 +1,25 @@
-.theme_light {
+:root.theme-light {
   --title-color: #FFC2E6 !important;
   --text-color: #353430 !important;
   --sub-text-color: #353430 !important;
   --accent-color: #ff8dcb !important;
-  --btn-color: #353430 !important;
+  --btn-color: #FF8DCB !important;
   --backgroung-image: url(../images/cover-image-light.png) !important;
 }
 
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: theme-light) {
   :root {
     --title-color: #FFC2E6 !important;
     --text-color: #353430 !important;
     --sub-text-color: #353430 !important;
     --accent-color: #ff8dcb !important;
-    --btn-color: #353430 !important;
+    --btn-color: #FF8DCB !important;
     --backgroung-image: url(../images/cover-image-light.png) !important;
   }
 
-  .decorative__element {
+  .rec {
     display: none;
   }
 
-  .header__theme-menu-button:hover {
-    border: 1px solid rgba(50, 49, 45, 0.40);
-  }
 }
