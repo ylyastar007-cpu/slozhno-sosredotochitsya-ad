@@ -1,5 +1,347 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0 auto;
+  font-family: var(--font, monospace);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 23.4px;
+  background-image: var(--backgroung-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  min-block-size: 100vh;
+  padding: 20px;
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 0 13px;
+  color: var(--btn-color);
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--btn-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--btn-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
+  cursor: pointer;
+}
+
+.rec {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  gap: 10px;
+  color: var(--btn-color);
+  text-align: center;
+  padding-right: 8px;
+  margin: 20px;
+}
+
+.rec::after {
+  display: block;
+  content: "";
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  fill: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+
+
+.frame::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  border-top: 1px solid var(--btn-color);
+  border-right: 1px solid var(--btn-color);
+  inline-size: 25px;
+  block-size: 25px;
+  margin: 20px;
+}
+
+.frame::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border-bottom: 1px solid var(--btn-color);
+  border-left: 1px solid var(--btn-color);
+  inline-size: 25px;
+  block-size: 25px;
+  margin: 20px;
+}
+
+
+.header__title {
+  margin-left: -20px;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+.title-text {
+  font-weight: 700;
+  background-color: var(--accent-color);
+  font-size: var(--font-size);
+  line-height: 23.4px;
+  color: var(--sub-text-color);
+}
+
+.header__text {
+  max-inline-size: 491px;
+  max-block-size: 71px;
+  justify-self: end;
+  align-self: center;
+}
+
+
+
+
+.content-section {
+  margin-bottom: 80px;
+}
+
+.content__section-articles {}
+
+.content__section-heading {
+  color: var(--btn-color);
+  font-size: var(--font-size);
+  margin-bottom: 20px;
+}
+
+.content__section-article {
+  margin-bottom: 20px;
+}
+
+.article-heading,
+.content__section-subtitle {
+  background-color: var(--btn-color);
+  color: var(--sub-text-color);
+  font-size: var(--font-size);
+  margin-bottom: 10px;
+}
+
+.article-text {
+  color: var(--text-color);
+}
+
+.article-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.article-heading-thin {
+  font-weight: 400;
+}
+
+.content__section-subtitle {
+  margin-bottom: 20px;
+}
+
+.main {
+  margin: 0px 20px;
+}
+
+.issues {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 34% 64%;
+}
+
+.tips {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 34% 64%;
+}
+
+.content__section-articles {
+  display: grid;
+  grid-template-columns: 34% 32% 32%;
+  gap: 20px;
+  padding-block-start: 20px;
+}
+
+
+.gallery-heading {
+  margin: 0 20px 20px 20px;
+}
+
+.gallery__items {
+  margin: 0 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: inherit;
+}
+
+.gallery__img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery__img:first-of-type {
+  grid-column: 1 / 3;
+}
+
+.gallery__img:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.gallery__img:nth-of-type(3) {
+  grid-row: 2 / 4;
+}
+
+.gallery__img:nth-of-type(4) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.gallery__img-item:last-of-type {
+  grid-column: 2 / 4;
+}
+
+.footer {
+  min-block-size: 100vh;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 82.5%;
+
+}
+
+
+@media (max-width:768px) {
+  .header__theme-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
+  }
+
+  .header__text {
+    max-inline-size: 364px;
+    max-block-size: 117px;
+  }
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .content__section-articles {
+    display: block;
+  }
+
+
+  .footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width:560px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header__title {
+    margin-left: 0px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header__text {
+    max-inline-size: 355px;
+    max-block-size: 117px;
+  }
+
+  .gallery__img {
+    padding: 0 0 40px 0;
+  }
+
+  .gallery-heading {
+    margin: 0 10px 10px 10px;
+  }
+
+  .gallery__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+  }
+
+  .issues{
+    display: block;
+  }
+  .tips{
+    display: block;
+  }
+  .footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .decorative__element {
+    margin: 10px;
+  }
+
+  .frame::before {
+    margin: 10px;
+  }
+
+  .frame::after {
+    block-size: 25px;
+    margin: 10px;
+  }
 }
