@@ -238,6 +238,33 @@
 
 
 @media (max-width:768px) {
+  .header {}
+
+  .content-section {
+    margin: 0px;
+  }
+
+  .issues {
+    margin-top: 60px;
+    grid-template-columns: 32% 65%;
+  }
+
+  .reasons {
+    margin-top: 60px;
+  }
+
+  .tips {
+    margin-top: 80px;
+    grid-template-columns: 32% 65%;
+  }
+
+  .gallery {
+    margin-top: 60px;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
 
   .header__theme-menu {
     display: flex;
@@ -252,7 +279,7 @@
   }
 
   .header__text {
-    margin-top: 0px;
+    margin-top: 37px;
     max-inline-size: 364px;
     max-block-size: 117px;
   }
@@ -279,6 +306,27 @@
     padding: 10px;
   }
 
+  .issues {
+    margin-top: 0px;
+  }
+
+  .reasons {
+    margin-top: 0px;
+  }
+
+  .tips {
+    margin-top: 0px;
+    grid-template-columns: 32% 65%;
+  }
+
+  .gallery {
+    margin-top: 0px;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+
   .header__title {
     margin-left: 0px;
     line-height: 83%;
@@ -291,6 +339,7 @@
   }
 
   .header__text {
+    margin-top: 0px;
     max-inline-size: 355px;
     max-block-size: 117px;
   }
