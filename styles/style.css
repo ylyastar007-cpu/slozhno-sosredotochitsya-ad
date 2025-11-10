@@ -63,7 +63,7 @@
 }
 
 
-.frame::before {
+.corners::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -75,7 +75,7 @@
   margin: 20px;
 }
 
-.frame::after {
+.corners::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -385,11 +385,11 @@
     margin: 10px;
   }
 
-  .frame::before {
+  .corners::before {
     margin: 10px 10px;
   }
 
-  .frame::after {
+  .corners::after {
     block-size: 25px;
     margin: 10px 10px;
   }
