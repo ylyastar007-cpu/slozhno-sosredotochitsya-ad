@@ -128,7 +128,7 @@
   margin-bottom: 20px;
 }
 
-.article-heading,
+.article_title,
 .content__section-subtitle {
   background-color: var(--btn-color);
   color: var(--sub-text-color);
@@ -136,16 +136,16 @@
   margin-bottom: 10px;
 }
 
-.article-text {
+.article_text {
   color: var(--text-color);
 }
 
-.article-link {
+.article_link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.article-heading-thin {
+.article_titleSmall {
   font-weight: 400;
 }
 
@@ -165,7 +165,7 @@
 
 
 
-.heading-reasons {
+.heading__reasons {
   max-width: 32%;
 }
 
@@ -337,7 +337,7 @@
     margin: 39px 11px 0px 11px;
   }
 
-  .heading-reasons {
+  .heading__reasons {
     max-width: 100%;
   }
 
